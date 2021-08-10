@@ -4,9 +4,9 @@ import { FieldType, Table } from '@airtable/blocks/models';
 import { FieldPickerSynced, FormField } from '@airtable/blocks/ui';
 import useSelectedTables from '../hooks/useSelectedTables';
 import useStore from '../hooks/useStore';
-import { FIELD } from '../util/constants';
-import { Store } from '../util/types';
-import { areTablesValid, isLinkedFieldValid } from '../util/util';
+import { FIELD } from '../utils/constants';
+import { Store } from '../utils/types';
+import { areTablesValid, isLinkedFieldValid } from '../utils/util';
 
 const MenteesPreferenceField: React.FC = () => {
   const { menteesTableLinkedFieldId }: Store = useStore();

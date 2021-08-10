@@ -8,7 +8,7 @@ import {
   Text
 } from '@airtable/blocks/ui';
 import useSelectedTables from '../hooks/useSelectedTables';
-import { FIELD } from '../util/constants';
+import { FIELD } from '../utils/constants';
 
 const MenteesTableFieldErrorMessage: React.FC = () => {
   const [menteesTable]: [Table, Table] = useSelectedTables();

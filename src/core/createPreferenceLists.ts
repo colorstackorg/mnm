@@ -8,7 +8,7 @@ import {
   PersonPreference,
   PersonRecord,
   PersonRecordValue
-} from '../util/types';
+} from '../utils/types';
 
 /**
  * Returns the affinity for mapping of FieldType.MULTIPLE_SELECTS fields.

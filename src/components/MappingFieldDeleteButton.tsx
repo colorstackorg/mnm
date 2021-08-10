@@ -3,8 +3,8 @@ import React from 'react';
 import { GlobalConfig } from '@airtable/blocks/types';
 import { colors, TextButton, useGlobalConfig } from '@airtable/blocks/ui';
 import useStore from '../hooks/useStore';
-import { FIELD } from '../util/constants';
-import { IdProps, Store } from '../util/types';
+import { FIELD } from '../utils/constants';
+import { IdProps, Store } from '../utils/types';
 
 const MappingFieldDeleteButton: React.FC<IdProps> = ({ id }: IdProps) => {
   const globalConfig: GlobalConfig = useGlobalConfig();

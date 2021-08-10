@@ -1,5 +1,5 @@
 import { Table } from '@airtable/blocks/models';
-import { Store } from '../util/types';
+import { Store } from '../utils/types';
 import useStore from './useStore';
 import useTable from './useTable';
 

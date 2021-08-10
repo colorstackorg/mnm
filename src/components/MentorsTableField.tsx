@@ -9,8 +9,8 @@ import {
 } from '@airtable/blocks/ui';
 import useSelectedTables from '../hooks/useSelectedTables';
 import useStore from '../hooks/useStore';
-import { FIELD } from '../util/constants';
-import { Store } from '../util/types';
+import { FIELD } from '../utils/constants';
+import { Store } from '../utils/types';
 
 const MentorsTableFieldPermissionErrorMessage: React.FC = () => {
   const [, mentorsTable]: [Table, Table] = useSelectedTables();

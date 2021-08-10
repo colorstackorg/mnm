@@ -4,7 +4,7 @@ import { Field, FieldType, Table } from '@airtable/blocks/models';
 import { Box, colors, Text } from '@airtable/blocks/ui';
 import useSelectedTables from '../hooks/useSelectedTables';
 import useStore from '../hooks/useStore';
-import { IdProps, Store } from '../util/types';
+import { IdProps, Store } from '../utils/types';
 import MappingFieldDeleteButton from './MappingFieldDeleteButton';
 import MappingFieldMenteeField from './MappingFieldMenteeField';
 import MappingFieldMentorField from './MappingFieldMentorField';

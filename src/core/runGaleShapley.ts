@@ -1,4 +1,4 @@
-import { Person } from '../util/types';
+import { Person } from '../utils/types';
 
 /**
  * Returns true if the mentor prefers the newMenteeId to the

@@ -1,7 +1,7 @@
 import { GlobalConfig } from '@airtable/blocks/types';
 import { useGlobalConfig } from '@airtable/blocks/ui';
-import { FIELD } from '../util/constants';
-import { FieldMapping, Store } from '../util/types';
+import { FIELD } from '../utils/constants';
+import { FieldMapping, Store } from '../utils/types';
 
 /**
  * Returns the Store that is seralized from the global configuration within

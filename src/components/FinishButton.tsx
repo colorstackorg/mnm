@@ -3,8 +3,8 @@ import React from 'react';
 import { Button } from '@airtable/blocks/ui';
 import useStore from '../hooks/useStore';
 import useUpdateMenteeRecords from '../hooks/useUpdateMenteeRecords';
-import { FIELD } from '../util/constants';
-import { FieldMapping, Store } from '../util/types';
+import { FIELD } from '../utils/constants';
+import { FieldMapping, Store } from '../utils/types';
 
 const FinishButton: React.FC = () => {
   const { fieldMappingIds, fieldMappings }: Store = useStore();

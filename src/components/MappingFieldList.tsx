@@ -4,8 +4,8 @@ import { Table } from '@airtable/blocks/models';
 import { FormField } from '@airtable/blocks/ui';
 import useSelectedTables from '../hooks/useSelectedTables';
 import useStore from '../hooks/useStore';
-import { Store } from '../util/types';
-import { areTablesValid, isLinkedFieldValid } from '../util/util';
+import { Store } from '../utils/types';
+import { areTablesValid, isLinkedFieldValid } from '../utils/util';
 import MappingField from './MappingField';
 import MappingFieldAddButton from './MappingFieldAddButton';
 

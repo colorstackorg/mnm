@@ -2,9 +2,9 @@ import { Record as AirtableRecord, Table } from '@airtable/blocks/models';
 import { FieldId, RecordId } from '@airtable/blocks/types';
 import createPreferenceLists from '../core/createPreferenceLists';
 import runGaleShapley from '../core/runGaleShapley';
-import { FIELD } from '../util/constants';
-import { FieldMapping, Person, PersonRecord, Store } from '../util/types';
-import { chunkifyArray, formatRecords } from '../util/util';
+import { FIELD } from '../utils/constants';
+import { FieldMapping, Person, PersonRecord, Store } from '../utils/types';
+import { chunkifyArray, formatRecords } from '../utils/util';
 import useLazyFetchRecords from './useLazyFetchRecords';
 import useStore from './useStore';
 import useTable from './useTable';
@@ -82,10 +82,12 @@ const useUpdateMenteeRecords = (): (() => Promise<void>) => {
     const matches: [string, string][] = runGaleShapley(mentees, mentors);
 
     const recordsToUpdate: UpdateRecordsData[] = matches.map(
-      ([menteeId, mentorId]: [string, string]) => ({
-        fields: { [menteesTableLinkedFieldId]: [{ id: mentorId }] },
-        id: menteeId
-      })
+      ([menteeId, mentorId]: [string, string]) => {
+        return {
+          fields: { [menteesTableLinkedFieldId]: [{ id: mentorId }] },
+          id: menteeId
+        };
+      }
     );
 
     // Split the update records into chunks of 50 to abide by Airtable's

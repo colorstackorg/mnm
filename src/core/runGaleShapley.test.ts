@@ -1,6 +1,6 @@
 import cases from 'jest-in-case';
 
-import { Person, TestObject } from '../util/types';
+import { Person, TestObject } from '../utils/types';
 import runGaleShapley from './runGaleShapley';
 
 cases(

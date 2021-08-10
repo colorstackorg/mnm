@@ -4,8 +4,8 @@ import React from 'react';
 import { GlobalConfig } from '@airtable/blocks/types';
 import { TextButton, useGlobalConfig } from '@airtable/blocks/ui';
 import useStore from '../hooks/useStore';
-import { FIELD } from '../util/constants';
-import { Store } from '../util/types';
+import { FIELD } from '../utils/constants';
+import { Store } from '../utils/types';
 
 const MappingFieldAddButton: React.FC = () => {
   const globalConfig: GlobalConfig = useGlobalConfig();

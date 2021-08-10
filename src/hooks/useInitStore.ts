@@ -4,8 +4,8 @@ import { useEffect } from 'react';
 import { Session } from '@airtable/blocks/models';
 import { GlobalConfig } from '@airtable/blocks/types';
 import { useGlobalConfig, useSession } from '@airtable/blocks/ui';
-import { FIELD } from '../util/constants';
-import { Store } from '../util/types';
+import { FIELD } from '../utils/constants';
+import { Store } from '../utils/types';
 import useStore from './useStore';
 
 /**

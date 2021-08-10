@@ -1,7 +1,7 @@
 import cases from 'jest-in-case';
 
 import { FieldType } from '@airtable/blocks/models';
-import { Person, PersonRecord, TestObject } from '../util/types';
+import { Person, PersonRecord, TestObject } from '../utils/types';
 import createPreferenceLists, {
   computeAffinity
 } from './createPreferenceLists';

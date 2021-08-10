@@ -9,8 +9,8 @@ import {
 } from '@airtable/blocks/ui';
 import useSelectedTables from '../hooks/useSelectedTables';
 import useStore from '../hooks/useStore';
-import { FIELD } from '../util/constants';
-import { areTablesValid, isLinkedFieldValid } from '../util/util';
+import { FIELD } from '../utils/constants';
+import { areTablesValid, isLinkedFieldValid } from '../utils/util';
 
 const MenteesTableLinkedFieldErrorMessage: React.FC = () => {
   const { menteesTableLinkedFieldId } = useStore();
